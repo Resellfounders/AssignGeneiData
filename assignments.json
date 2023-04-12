@@ -2,21 +2,7 @@
   {
     "id": "p1001",
     "questionTitle": "Assignment 1Uninformed",
-    "problemStatementFull": "For this assignment, please implement
-	a) Longest Common Subsequence Dynamic Programming approach with b and c arrays (LCS_DP_1(X,Y)) (Textbook Pg 394 ).
-	b) LCS approach with b and c arrays LCS_DP_2(X,Y)) (Textbook Pg 394 with an additional constraint) The constraint on the LCS
-	is that the characters chosen for the longest subsequence need to be in an ascending order only.
-	Detailed requirements:
-	• Write two programs for each of the algorithms named as LCS_DP_1.py and LCS_DP_2.py (or another extension if the code
-	is in a language other than python). Code may be implemented in any programming language.
-	• LCS_DP_1.py does the following:
-	o reads a file LCS1.txt with two strings in each line and uses them as X and Y input variables for a function
-	LCS_DP_1(X,Y))
-	o LCS_DP_1(X,Y)) function
-	▪ implements the dynamic programming version of LCS-LENGTH(X,Y) (Textbook Page 394)
-	▪ populates arrays b and c
-	▪ stores \, ^, < in array b instead of diagonal up arrow, up arrow, and left arrow and
-	▪ produces corresponding b[i][j] c[i][j] side by side as shown below for all pairs of strings in LCS1.txt",
+    "problemStatementFull": "For this assignment, please implement\n\ta) Longest Common Subsequence Dynamic Programming approach with b and c arrays (LCS_DP_1(X,Y)) (Textbook Pg 394 ).\n\tb) LCS approach with b and c arrays LCS_DP_2(X,Y)) (Textbook Pg 394 with an additional constraint) The constraint on the LCS\n\tis that the characters chosen for the longest subsequence need to be in an ascending order only.\n\tDetailed requirements:\n\t• Write two programs for each of the algorithms named as LCS_DP_1.py and LCS_DP_2.py (or another extension if the code\n\tis in a language other than python). Code may be implemented in any programming language.\n\t• LCS_DP_1.py does the following:\n\to reads a file LCS1.txt with two strings in each line and uses them as X and Y input variables for a function\n\tLCS_DP_1(X,Y))\n\to LCS_DP_1(X,Y)) function\n\t▪ implements the dynamic programming version of LCS-LENGTH(X,Y) (Textbook Page 394)\n\t▪ populates arrays b and c\n\t▪ stores , ^, < in array b instead of diagonal up arrow, up arrow, and left arrow and\n\t▪ produces corresponding b[i][j] c[i][j] side by side as shown below for all pairs of strings in LCS1.txt",
     "answerTitle": "Here's the solution for Longest Common Subsequence Dynamic Programming along with the report :",
     "tags": ["LCS", "Longest Common Subsequence Computer Science", " CSE 5311 "]
   },
@@ -29,19 +15,13 @@
   {
     "id": "p1003",
     "questionTitle": "Assignment Maximum repetitor factor",
-    "problemStatementFull": "Let yi denote the concatenation of string y with itself i times. For example, (ab)3=ababab. We say that a string x ∈ Σ* has repetition factor r if x = yr for some string y ∈ Σ*and some r > 0. Let ρ(x) denote the largest r such that x has repetition factor r. Your task is listed below:
-Design a quadratic-time algorithm that takes as input a pattern P[1..m], computes the value ρ(Pi ) for i = 1, 2, ..., m, and returns Pi and the underlying repeating substring. To test the correctness of your code,  Let P = abababa. Then ρ(P1) = 1: a; ρ(P2) = 1: ab; ρ(P3) = 1: aba; ρ(P4) = 2: ab; ρ(P5) = 1, ababa; ρ(P6) = 3: ab; ρ(P7) = 1: abababa. (Hint: Use the prefix function π(i).) (60 points)
-Run the following experiment: generate m = 1,000 letters at random and form a pattern P in the order the letters are generated, where you may use a pseudo-random number generator to generate an integer between 1 and 26 for m times, with 1 representing a, 2 representing b, ..., 26 representing z. Compute the maximum repetitor ρ*(P) = max{ρ(Pi): i = 1, 2, ..., m}. Repeat this experiment for m times. What conclusion can you draw? (20 points)
-Justify that, mathematically, your algorithm for item 1 runs in O(m2) time. (20 points)
-Argue that, mathematically, if P is chosen uniformly and independently at random from the set of all binary strings of length m, the maximum repetitor factor ρ*(P) is expected to be a constant. (Optional: 20 bonus points)",
+    "problemStatementFull": "Let yi denote the concatenation of string y with itself i times. For example, (ab)3=ababab. We say that a string x ∈ Σ* has repetition factor r if x = yr for some string y ∈ Σ*and some r > 0. Let ρ(x) denote the largest r such that x has repetition factor r. Your task is listed below:\nDesign a quadratic-time algorithm that takes as input a pattern P[1..m], computes the value ρ(Pi ) for i = 1, 2, ..., m, and returns Pi and the underlying repeating substring. To test the correctness of your code,  Let P = abababa. Then ρ(P1) = 1: a; ρ(P2) = 1: ab; ρ(P3) = 1: aba; ρ(P4) = 2: ab; ρ(P5) = 1, ababa; ρ(P6) = 3: ab; ρ(P7) = 1: abababa. (Hint: Use the prefix function π(i).) (60 points)\nRun the following experiment: generate m = 1,000 letters at random and form a pattern P in the order the letters are generated, where you may use a pseudo-random number generator to generate an integer between 1 and 26 for m times, with 1 representing a, 2 representing b, ..., 26 representing z. Compute the maximum repetitor ρ*(P) = max{ρ(Pi): i = 1, 2, ..., m}. Repeat this experiment for m times. What conclusion can you draw? (20 points)\nJustify that, mathematically, your algorithm for item 1 runs in O(m2) time. (20 points)\nArgue that, mathematically, if P is chosen uniformly and independently at random from the set of all binary strings of length m, the maximum repetitor factor ρ*(P) is expected to be a constant. (Optional: 20 bonus points)",
     "answerTitle": "Here's is the solution to above problem:"
   },
   {
     "id": "p1004",
     "questionTitle": "Assignment FFT",
-    "problemStatementFull": "In addition to FFT (1-dimensional) convolution for achieving fast multiplication of two polynomials, 2-dimentional FFT (FFT2) has been widely used to compress images. The idea is this: Given an RGB image, first obtain a single value for each point (such as averaging RGB), apply FFT2 to compute its DFT on all the pixels in the image. For each pixel in the DFT, if its value is smaller than a threshold, then set it to zero. Finally, apply inverse DFT using IFFT2 to convert the result to an image. 
-For an RGB image, instead of taking the average, we may seperate the image into 3 color channels: the red-color channel, the green-color channel, and the blue-color channel. Similar to the above algorithm, perform FFT2 on each channel separately, and for each point, if its value is below a threshold, then set it to 0. Then use inverse DFT (ifft) to convert it back to each channel. Finally, combine the channels to form the final compressed image.
-Your task is to figure out what percentage of the point values to keep so that when it is inverted back to an image, you won't feel much degrading of the quality according to your judgement. Do an analysis on your experiments on a selection of several percentagaes. 
-You may use the following image as input for testing your code",
+    "problemStatementFull": "In addition to FFT (1-dimensional) convolution for achieving fast multiplication of two polynomials, 2-dimentional FFT (FFT2) has been widely used to compress images. The idea is this: Given an RGB image, first obtain a single value for each point (such as averaging RGB), apply FFT2 to compute its DFT on all the pixels in the image. For each pixel in the DFT, if its value is smaller than a threshold, then set it to zero. Finally, apply inverse DFT using IFFT2 to convert the result to an image. \nFor an RGB image, instead of taking the average, we may seperate the image into 3 color channels: the red-color channel, the green-color channel, and the blue-color channel. Similar to the above algorithm, perform FFT2 on each channel separately, and for each point, if its value is below a threshold, then set it to 0. Then use inverse DFT (ifft) to convert it back to each channel. Finally, combine the channels to form the final compressed image.\nYour task is to figure out what percentage of the point values to keep so that when it is inverted back to an image, you won't feel much degrading of the quality according to your judgement. Do an analysis on your experiments on a selection of several percentagaes. \nYou may use the following image as input for testing your code",
     "answerTitle": "Here's how you can Solve this problem:"
   }
+]
