@@ -6,7 +6,7 @@
 "tags": ["hw2-seda"]
 },
 {
-"id": "p1001",
+"id": "p1002",
 "questionTitle": "Programming assignment: \n Write a Spark program to load images continuing dogs, cats, and horses,",
 "problemStatementFull": "Programming assignment: \n Write a Spark program to load images continuing dogs, cats, and horses, then use the developed model to identify 10 different pictures presented to your program including animals not in your training data set (such as a rabbit)? \n•\tYour program should use an image data set of 100 images for training \n•\tYour validation data set is 10 images\n •\tShow illustrations and graphs of your results",
 "answerTitle": "Here's the solution the above programming assignment",
